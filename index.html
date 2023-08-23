@@ -1,34 +1,74 @@
+<!-- Animação -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folha de Atendimento - Bombeiros</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Carregando</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100dvh;
+        }
+        .pai{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .linha{
+            margin: 0 auto;
+            width: 300px;
+            height: 40px;
+            border: 1px solid #353288;
+            
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        .linha::after{
+            content: '';
+            inset: -2px;
+            background-color: #353288;
+            position: absolute;
+
+            right: 300px;
+            animation: carregar 5s ease forwards;
+        }
+        @keyframes carregar {
+            55%{
+                right: 100px;
+            }
+            100%{
+                right: -10px;
+            }
+        }
+    </style>
+    <script>
+        temporizador = setTimeout(Abrir, 5000);
+
+        function Abrir() {
+            window.open("paginas/home.php", "_self");
+        }
+    </script>
 </head>
 <body>
-
-    <nav class="hidden_nav">
-        <ul>
-            <li><a href="#">página 1</a></li>
-            <li><a href="#">página 2</a></li>
-            <li><a href="#">página 3</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <img src="logo_pequena.png" alt="logoNOAR">
-        <div class="nameSpace">
-            <h1>Bombeiros Voluntários</h1>
-            <h3>Assoc. de Serviços Sociais Voluntários de Guaramirim</h3>
+    <div class="pai">
+        <img src="sources/logo_pequena.png">
+        <h3>Carregando, aguarde</h3>
+        <div class="linha">
         </div>
-        <div class="menu">
-            <div class="menu_burguer"></div>
-        </div>
-    </header>
-
-    <main></main>
+    </div>
 </body>
-<script src="main.js"></script>
 </html>
