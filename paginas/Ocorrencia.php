@@ -35,9 +35,7 @@
                         <label for="M">M</label>
                         <input type="radio" id="F" name="sexo" value="feminino">
                         <label for="F">F</label>
-                    </div>
 
-                    <div class="row">
                         <label for="nomeHospital">Nome do hospital:</label>
                         <input type="text" id="nomeHospital">
                     </div>
@@ -48,9 +46,7 @@
 
                         <label for="idadePaciente">Idade:</label>
                         <input type="number" id="idadePaciente">
-                    </div>
 
-                    <div class="row">
                         <label for="DadoPaciente">RG/CPF Paciente:</label>
                         <input type="text" id="DadoPaciente">
 
