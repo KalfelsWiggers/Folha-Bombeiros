@@ -34,11 +34,12 @@
         align-items: center;
     }
     header img{
+        padding-left: 25px;
         height: 100%;
     }
     header ul li{
         display: inline-block;
-        padding-right: 15px;
+        padding-right: 25px;
     }
     header ul li a{
         color: #fff;

@@ -17,7 +17,7 @@
     <header>
         <img src="../sources/logo_pequena.png">
         <ul>
-            <li><a href="#">Ocorrência</a></li>
+            <li><a href="Ocorrencia.php">Ocorrência</a></li>
             <li><a href="#">Suporte</a></li>
             <li><a href="#">Fazer login</a></li>
         </ul>
