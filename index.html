@@ -44,19 +44,16 @@
             position: absolute;
 
             right: 300px;
-            animation: carregar 5s ease forwards;
+            animation: carregar 4s linear forwards;
         }
         @keyframes carregar {
-            55%{
-                right: 100px;
-            }
             100%{
                 right: -10px;
             }
         }
     </style>
     <script>
-        temporizador = setTimeout(Abrir, 5000);
+        temporizador = setTimeout(Abrir, 4100);
 
         function Abrir() {
             window.open("paginas/home.php", "_self");
