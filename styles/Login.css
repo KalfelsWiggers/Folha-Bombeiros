@@ -44,30 +44,3 @@
     header ul li a{
         color: #fff;
     }
-
-/* Main */
-
-    main{
-        width: 100%;
-        height: calc(100dvh - 90px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    main section{
-        color: black;
-        text-align: center;
-    }
-    main button{
-        margin-top: 15px;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 8px;
-        
-        color: #fff;
-        background-color: var(--header-bg);
-        cursor: pointer;
-        font-size: 20px;
-    }
-
-
